@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'artists/index'
+  resources :artists, actions: :index
   root 'artists#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
